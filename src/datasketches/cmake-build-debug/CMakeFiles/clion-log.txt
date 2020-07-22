@@ -1,0 +1,10 @@
+"/Applications/CLion 2.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Volumes/Workspace/apache-datasketches-cpp
+-- Found PythonInterp: /usr/local/bin/python3.7 (found version "3.7.6") 
+-- Found PythonLibs: /usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib
+-- pybind11 v2.4.dev4
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- LTO enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Volumes/Workspace/apache-datasketches-cpp/cmake-build-debug
