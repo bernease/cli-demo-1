@@ -1,4 +1,4 @@
-# WhyLogs - A Library for Statistical Profile Logging
+# WhyLogs CLI Demo - A Library for Statistical Profile Logging
 
 Source code included for DataSketches and WhyLogs.  
 Available under Apache License 2.0
