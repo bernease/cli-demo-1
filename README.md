@@ -60,7 +60,7 @@ Required environment:
 - GCC (if you plan to compile the package from source)
 - [DataSketches](https://datasketches.apache.org/) is  a dependency but included in the WhyLogs installation
 
-Pre-compiled binaries can be found under the `dist` folder. 
+Precompiled binaries can be found under the `dist` folder. 
 
 ## Installation instructions
 
