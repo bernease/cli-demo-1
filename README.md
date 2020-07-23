@@ -48,7 +48,7 @@ Two example Juypter notebooks are included with WhyLogs. One notebook (Analysis.
 
 ### Project example data
 
-The dataset used in the project example is Lending Club Data from Kaggle. These files contain complete loan data for all loans issued through the years 2007-2015, including the current (as of dataset release in late 2018) loan status (Current, Late, Fully Paid, etc.) and latest payment information.
+The dataset used in the project example is [Lending Club loan data](https://www.kaggle.com/wordsforthewise/lending-club) from Kaggle. These files contain complete loan data for all loans issued through the years 2007-2015, including the current (as of dataset release in late 2018) loan status (Current, Late, Fully Paid, etc.) and latest payment information.
 
 The file containing loan data through the "present" contains complete loan data for all loans issued through the previous completed calendar quarter. The data set consists of 152 features. 
 
