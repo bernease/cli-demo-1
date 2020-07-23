@@ -66,9 +66,9 @@ Pre-compiled binaries can be found under the `dist` folder.
 
 1. Ensure all dependencies are met
 2. Extract the files with: `tar -xzf whylogs.tar.gz`
-3. Create a new virtual environment, either with virtualenv or conda (we recommend Miniconda)
+3. Create a new virtual environment, either with VirtualEnv or Conda (we recommend Miniconda)
 4. Ensure that Python 3.7 is used
-   1. With conda use: `conda create --name whylogs python=3.7`
+   1. With Conda use: `conda create --name whylogs python=3.7`
 5. Ensure the latest pip version with:
    1. Conda: `conda install pip` 
    2. VirtualEnv: `pip install -U pip`
