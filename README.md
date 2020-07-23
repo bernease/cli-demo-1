@@ -1,7 +1,7 @@
 # WhyLogs CLI Demo - A Library for Statistical Profile Logging
 
 Source code included for DataSketches and WhyLogs.  
-Available under Apache License 2.0
+WhyLogs v0.0.2 available under Apache License 2.0
 
 ### Overview
 
@@ -30,9 +30,9 @@ An example project is included in the packages as follows:
 
 **Pipeline:** A series of one or multiple datasets to build a single model or application. A project might contain multiple pipelines.
 
-**Dataset:** A collection of records. WhyLogs v0.X supports structured datasets; meaning that the data can be represented as a table where each row is a different record, and each column is a feature of the record. 
+**Dataset:** A collection of records. WhyLogs v0.0.2 supports structured datasets; meaning that the data can be represented as a table where each row is a different record, and each column is a feature of the record. 
 
-**Feature:** In the context of WhyLogs v0.X and structured data, a feature is a column in a dataset. A feature can be discrete (think of gender or eye color) or continuous (think of age or salary). 
+**Feature:** In the context of WhyLogs v0.0.2 and structured data, a feature is a column in a dataset. A feature can be discrete (think of gender or eye color) or continuous (think of age or salary). 
 
 **WhyLogs Output:** A profile summary file is returned by WhyLogs on a given dataset in JSON format. For convenience, files for this content are provided in flat table, histogram, and frequency format.
 
