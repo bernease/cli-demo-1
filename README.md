@@ -55,42 +55,16 @@ The file containing loan data through the "present" contains complete loan data 
 ### Dependencies
 Required environment:
 - Linux x86-64/Windows subsystem OR Mac OS X
-- Python 3.7
-- Conda (recommended) or virtualenv
-- GCC (if you plan to compile the package from source)
-- [DataSketches](https://datasketches.apache.org/) is  a dependency but included in the WhyLogs installation
+- Python 3.7 or later
 
-Precompiled binaries can be found under the `dist` folder. 
-
-## Installation instructions
+## Getting Started
 
 1. Make sure you have Python 3.7 or 3.8 (`python --version`)
 2. Run `pip install -U whylogs`.
-   You might have to run `pip3 install -U whylogs` for MacOS
-3. To start WhyLogs, run: `whylogs init`
-4. Start Jupyter to view the notebooks
+   You might have to run `pip3 install -U whylogs` for MacOS X.
+3. To start WhyLogs, run: `whylogs init`. Follow the instructions.
+4. The CLI comes with a sample dataset of 1000 entries from the Loanding Club dataset above.
+5. Start Jupyter to view the notebooks.
 
-### Compiling from source
+For other ways of installing, please see [Installation Instructions](INSTALLATION.md)
 
-If you would prefer not to use the precompiled binaries, you can compile from source by following these steps:
-1. Set up a Python 3.7 conda/virtualenv environment. Activate the environment before proceeding.
-2. Make sure you have an up-to-date gcc
-   1. `(your-env) $ gcc --version `
-3. Clone the package:
-   1. `(your-env) $ git clone https://github.com/whylabs/cli-demo-1.git`
-4. From the root of the `cli-demo-1` package, install DataSketches in your environment:
-   1. `(your-env) $ cd src/datasketches`
-   2. `(your-env) $ python setup.py build`
-   3. `(your-env) $ python setup.py bdist_wheel`
-   4. `(your-env) $ pip install dist/*`
-5. Verify datasketches was installed:
-   1. `(your-env) $ pip list | fgrep datasketches` <br> `datasketches       2.0.0b6`
-6. Switch to whylogs source code path from datasketches
-   1. `(your-env) $ cd ../whylogs`
-   2. `(your-env) $ python setup.py build`
-   3. `(your-env) $ python setup.py bdist_wheel`
-   4. `(your-env) $ pip install dist/*`
-7. Verify WhyLogs was installed:
-   1. `(your-env) $ pip list  | fgrep whylogs`<br>`whylogs-python     0.0.2b2`
-
-You can use the wheel artifacts compiled from source specific to your platform above and install them in other environments (equivalent to using our precompiled binaries).
