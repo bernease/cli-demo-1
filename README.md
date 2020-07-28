@@ -59,12 +59,11 @@ Required environment:
 
 ## Getting Started
 
-1. Make sure you have Python 3.7 or 3.8 (`python --version`)
-2. Run `pip install -U whylogs`.
+1. Run `pip install -U whylogs`.
    You might have to run `pip3 install -U whylogs` for MacOS X.
-3. To start WhyLogs, run: `whylogs init`. Follow the instructions.
-4. The CLI comes with a sample dataset of 1000 entries from the Loanding Club dataset above.
-5. Start Jupyter to view the notebooks.
+2. To start WhyLogs, run: `whylogs init`. Follow the instructions.
+3. The CLI comes with a sample dataset of 1000 entries from the Loanding Club dataset above.
+4. Start Jupyter to view the notebooks.
 
-For other ways of installing, please see [Installation Instructions](INSTALLATION.md)
+For other ways of installing, please see [Installation Instructions](INSTALLATION.md).
 
