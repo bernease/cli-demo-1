@@ -1,1 +1,0 @@
-/Users/andy/miniconda3/bin/c++ -DVERSION_INFO=\"2.0.0b3\" -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -dynamiclib -Wl,-headerpad_max_install_names  -o ../lib.macosx-10.9-x86_64-3.7/libdatasketches.dylib -install_name @rpath/libdatasketches.dylib  
