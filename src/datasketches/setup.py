@@ -41,7 +41,7 @@ def get_version(rel_path):
         if line.startswith('__version__'):
             delimiter = '"' if '"' in line else "'"
             v = line.split(delimiter)[1]
-            print(f'WhyLogs version: {v}')
+            print('WhyLogs version:', v)
             return v
     else:
         raise RuntimeError("Unable to find version string.")
@@ -77,6 +77,8 @@ class CMakeBuild(build_ext):
             os.path.dirname(self.get_ext_fullpath(ext.name)))
         cmake_args =  ['-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=' + extdir]
         cmake_args += ['-DWITH_PYTHON=True']
+        # Require to enable Pybind11 to pick up the correct Python paths
+        cmake_args += ['-DPYTHON_EXECUTABLE=' + sys.executable]
         cfg = 'Debug' if self.debug else 'Release'
         build_args = ['--config', cfg]
 
@@ -104,7 +106,7 @@ class CMakeBuild(build_ext):
         print() # add an empty line to pretty print
 
 setup(
-    name='datasketches',
+    name='whylabs-datasketches',
     #use_scm_version=True,
     version=version,
     author='Datasketches Developers',
@@ -116,8 +118,9 @@ setup(
     packages=find_packages('python'), # python pacakges only in this dir
     package_dir={'':'python'},
     # may need to add all source paths for sdist packages w/o MANIFEST.in
-    ext_modules=[CMakeExtension('datasketches')],
+    ext_modules=[CMakeExtension('whylabs-datasketches')],
     cmdclass={'build_ext': CMakeBuild},
     setup_requires=['setuptools_scm','tox-setuptools'],
+    python_requires='>=3.5',
     zip_safe=False
 )

@@ -81,11 +81,9 @@ add_subdirectory(fi)
 add_subdirectory(theta)
 add_subdirectory(sampling)
 
-add_subdirectory(python)
-#
-#if (WITH_PYTHON)
-#  add_subdirectory(python)
-#endif()
+if (WITH_PYTHON)
+  add_subdirectory(python)
+endif()
 
 target_link_libraries(datasketches PUBLIC hll cpc kll fi theta sampling)
 
