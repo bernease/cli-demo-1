@@ -64,21 +64,11 @@ Precompiled binaries can be found under the `dist` folder.
 
 ## Installation instructions
 
-1. Ensure all dependencies are met
-2. Extract the files with: `tar -xzf whylogs.tar.gz`
-3. Create a new virtual environment, either with VirtualEnv or Conda (we recommend Miniconda)
-4. Ensure that Python 3.7 is used
-   1. With Conda use: `conda create --name whylogs python=3.7`
-5. Ensure the latest pip version with:
-   1. Conda: `conda install pip` 
-   2. VirtualEnv: `pip install -U pip`
-6. Select destination directory to install WhyLogs:
-   1. MacOS users, please use the `MacOSX-x86_64` directory
-   2. Linux x86-64/Windows subsystem users, please use the `Linux-x86_64` directory
-7. Install WhyLogs with: `pip install datasketches* && pip install whylogs*`
-8. You can install these libraries in your notebooks as well but note that *the order of installation is important*
-9. To start WhyLogs, run: `whylogs init`
-10. Install Jupyter to view the notebooks
+1. Make sure you have Python 3.7 or 3.8 (`python --version`)
+2. Run `pip install -U whylogs`.
+   You might have to run `pip3 install -U whylogs` for MacOS
+3. To start WhyLogs, run: `whylogs init`
+4. Start Jupyter to view the notebooks
 
 ### Compiling from source
 
@@ -94,13 +84,13 @@ If you would prefer not to use the precompiled binaries, you can compile from so
    3. `(your-env) $ python setup.py bdist_wheel`
    4. `(your-env) $ pip install dist/*`
 5. Verify datasketches was installed:
-   1. `(your-env) $ pip list | fgrep datasketches` <br> `datasketches       2.0.0b3`
+   1. `(your-env) $ pip list | fgrep datasketches` <br> `datasketches       2.0.0b6`
 6. Switch to whylogs source code path from datasketches
    1. `(your-env) $ cd ../whylogs`
    2. `(your-env) $ python setup.py build`
    3. `(your-env) $ python setup.py bdist_wheel`
    4. `(your-env) $ pip install dist/*`
 7. Verify WhyLogs was installed:
-   1. `(your-env) $ pip list  | fgrep whylogs`<br>`whylogs-python     0.0.2b0.dev10`
+   1. `(your-env) $ pip list  | fgrep whylogs`<br>`whylogs-python     0.0.2b2`
 
 You can use the wheel artifacts compiled from source specific to your platform above and install them in other environments (equivalent to using our precompiled binaries).
